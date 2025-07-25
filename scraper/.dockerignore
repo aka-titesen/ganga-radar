@@ -1,0 +1,18 @@
+# Scraper .dockerignore
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+.Python
+.git
+.gitignore
+README.md
+.env
+.env.local
+.env.production
+downloads/*
+logs/*
+.DS_Store
+*.log
+.pytest_cache
+.coverage

@@ -21,22 +21,26 @@ Ganga Radar es una aplicación web diseñada para monitorear y notificar automá
 ## 🛠️ Stack Tecnológico
 
 ### Frontend
+
 - **React** + **Vite** - Interfaz de usuario moderna y rápida
 - **TailwindCSS** - Estilos utilitarios y diseño responsivo
 - **React Router** - Navegación SPA
 
 ### Backend
+
 - **Node.js** + **Express** - API REST robusta
 - **Prisma ORM** - Manejo de base de datos
 - **PostgreSQL** - Base de datos principal
 - **Redis** - Cache y gestión de sesiones
 
 ### Scraping & Automatización
+
 - **Python** - Microservicio de scraping
 - **BeautifulSoup** + **Selenium** - Extracción de datos web
 - **n8n** - Automatización de flujos de trabajo
 
 ### Cloud & DevOps
+
 - **AWS** - Infraestructura cloud
 - **Docker** + **Docker Compose** - Contenedorización
 - **GitHub Actions** - CI/CD
@@ -45,7 +49,7 @@ Ganga Radar es una aplicación web diseñada para monitorear y notificar automá
 
 ### Prerrequisitos
 
-- Node.js 18+ 
+- Node.js 18+
 - Python 3.9+
 - Docker & Docker Compose
 - Git
@@ -53,23 +57,27 @@ Ganga Radar es una aplicación web diseñada para monitorear y notificar automá
 ### Instalación
 
 1. **Clonar el repositorio**
+
    ```bash
    git clone https://github.com/aka-titesen/ganga-radar.git
    cd ganga-radar
    ```
 
 2. **Configurar variables de entorno**
+
    ```bash
    cp .env.example .env
    # Editar .env con tus configuraciones
    ```
 
 3. **Levantar servicios con Docker**
+
    ```bash
    docker-compose up -d
    ```
 
 4. **Instalar dependencias del frontend**
+
    ```bash
    cd frontend
    npm install
@@ -77,6 +85,7 @@ Ganga Radar es una aplicación web diseñada para monitorear y notificar automá
    ```
 
 5. **Instalar dependencias del backend**
+
    ```bash
    cd ../backend
    npm install
@@ -139,13 +148,13 @@ npm run build
 
 ## 📊 Estado del Proyecto
 
-| Componente | Estado | Progreso |
-|------------|---------|----------|
-| 🏗️ Configuración Base | 🚧 En Progreso | 20% |
-| 🗄️ Backend Core | ⏳ Pendiente | 0% |
-| 🎨 Frontend MVP | ⏳ Pendiente | 0% |
-| 🕷️ Scraping | ⏳ Pendiente | 0% |
-| 📧 Notificaciones | ⏳ Pendiente | 0% |
+| Componente            | Estado         | Progreso |
+| --------------------- | -------------- | -------- |
+| 🏗️ Configuración Base | 🚧 En Progreso | 20%      |
+| 🗄️ Backend Core       | ⏳ Pendiente   | 0%       |
+| 🎨 Frontend MVP       | ⏳ Pendiente   | 0%       |
+| 🕷️ Scraping           | ⏳ Pendiente   | 0%       |
+| 📧 Notificaciones     | ⏳ Pendiente   | 0%       |
 
 ## 🤝 Contribución
 

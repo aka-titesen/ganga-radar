@@ -70,6 +70,23 @@ web_modules/
 .env.*
 !.env.example
 
+# ===================================
+# DOCKER & CONTAINERS
+# ===================================
+# Docker volumes data
+volumes/
+postgres_data/
+redis_data/
+n8n_data/
+scraper_downloads/
+
+# Docker logs and overrides
+docker-compose.override.yml
+.docker/
+
+# Container runtime files
+.dockerignore.bak
+
 # parcel-bundler cache (https://parceljs.org/)
 .cache
 .parcel-cache
