@@ -140,3 +140,72 @@ vite.config.ts.timestamp-*
 
 # Context for a LLM
 context-for-a-llm/
+
+# Sprints tracking folder (project management)
+sprints/
+
+# Docker volumes data
+docker-data/
+postgres-data/
+redis-data/
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Backup files
+*.bak
+*.backup
+*.sql
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+pip-log.txt
+pip-delete-this-directory.txt
+.pytest_cache/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Development files
+.env.local
+.env.development
+.env.production
+.env.test
+
+# Build artifacts
+build/
+dist/
+out/
+
+# Scraping temporary files
+scraper/temp/
+scraper/downloads/
+*.csv
+*.xlsx
