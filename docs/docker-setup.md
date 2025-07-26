@@ -5,10 +5,12 @@
 El proyecto utiliza Docker Compose para orquestar los siguientes servicios:
 
 ### 📊 Servicios de Base de Datos
+
 - **PostgreSQL 15**: Base de datos principal
 - **Redis 7**: Cache y manejo de sesiones
 
 ### 🚀 Servicios de Aplicación
+
 - **Backend**: Node.js + Express API
 - **Frontend**: React + Vite development server
 - **Scraper**: Python microservice para scraping
@@ -96,6 +98,7 @@ docker-compose exec redis redis-cli ping
 ## 🐛 Debugging
 
 ### Ver logs específicos
+
 ```bash
 # Logs de un servicio específico
 ./docker.sh logs backend
@@ -105,6 +108,7 @@ docker-compose exec redis redis-cli ping
 ```
 
 ### Acceder a containers
+
 ```bash
 # Shell del backend
 ./docker.sh shell backend
@@ -122,6 +126,7 @@ docker-compose exec redis redis-cli ping
 ### Troubleshooting común
 
 #### Puerto ocupado
+
 ```bash
 # Verificar puertos ocupados
 sudo lsof -i :3000
@@ -133,6 +138,7 @@ sudo lsof -i :5432
 ```
 
 #### Problemas de permisos
+
 ```bash
 # Dar permisos a scripts
 chmod +x docker.sh
@@ -140,6 +146,7 @@ chmod +x scripts/init-multiple-databases.sh
 ```
 
 #### Reset completo
+
 ```bash
 # Reset completo del entorno
 ./docker.sh clean
@@ -150,12 +157,14 @@ docker system prune -a
 ## 🔧 Variables de Entorno
 
 ### Para desarrollo local (sin Docker)
+
 ```bash
 DATABASE_URL="postgresql://postgres:password@localhost:5432/ganga_radar_dev"
 REDIS_URL="redis://localhost:6379"
 ```
 
 ### Para desarrollo con Docker
+
 ```bash
 DATABASE_URL="postgresql://postgres:password@postgres:5432/ganga_radar_dev"
 REDIS_URL="redis://redis:6379"
@@ -164,15 +173,18 @@ REDIS_URL="redis://redis:6379"
 ## 📦 Dependencias por Servicio
 
 ### Backend
+
 - Node.js 18
 - PostgreSQL client
 - Build tools (python3, make, g++)
 
 ### Frontend
+
 - Node.js 18
 - Git
 
 ### Scraper
+
 - Python 3.11
 - PostgreSQL client
 - Chromium + ChromeDriver
@@ -181,6 +193,7 @@ REDIS_URL="redis://redis:6379"
 ## 🚀 Deployment
 
 Para producción, usar:
+
 ```bash
 docker-compose -f docker-compose.prod.yml up -d
 ```
